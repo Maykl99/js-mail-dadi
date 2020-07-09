@@ -3,7 +3,7 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del controllo.
 Buon lavoro!  */
 
-var arrList=['mail@uno','mail@due','mail@tre','mail@quattro'];
+/* var arrList=['mail@uno','mail@due','mail@tre','mail@quattro'];
 var emailUtente=prompt('Inserisci la tua email');
 var mail=false;
 
@@ -19,7 +19,7 @@ if(mail==true){
     alert('email trovata')
 }else{
     alert('email non trovata')
-}
+} */
 
 
 //var valore= emailUtent;

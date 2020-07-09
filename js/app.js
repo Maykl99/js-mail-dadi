@@ -3,24 +3,24 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del controllo.
 Buon lavoro!  */
 
+var arrList=['mail@uno','mail@due','mail@tre','mail@quattro'];
+var emailUtente=prompt('Inserisci la tua email');
+var mail=false;
 
-var listaAccessi=['Marta@mail.gmail', 'Marco@mail.gmail', 'Matteo@mail.gmail', 'Mattia@mail.gmail'];
-var emailUtent= prompt('Inserisci la tua email');
-var trovato = false;
 
 
-for(var i=0; i<listaAccessi.length; i++){
-
-    if(emailUtent == listaAccessi[i]){
-        trovato= true;
+for(var index= 0; index < arrList.length; index++){
+    if(emailUtente == arrList[index]){
+        mail=true;
     }
 }
 
-if(trovato== true){
-    alert('trovata');
+if(mail==true){
+    alert('email trovata')
 }else{
-    alert('non trovata')
+    alert('email non trovata')
 }
+
 
 //var valore= emailUtent;
 

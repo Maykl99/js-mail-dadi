@@ -3,13 +3,17 @@ Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
  */
 
-var numeroCasuale=Math.floor(Math.random()* 7);
-numeroMacchina=numeroCasuale;
-var giocatoreCasuale=prompt('Scegli un numero fra 1 e 6');
-numeroGiocatore=giocatoreCasuale;
+var machineNumber=Math.floor(Math.random()* 7);
+var playerNumber=Math.floor(Math.random() *7);
+var confronto;
 
-if(numeroGiocatore > numeroCasuale){
-    alert('Hai vinto tu!')
+
+if(machineNumber > playerNumber){
+    alert('Ha vinto la macchina')
+    confronto = 'Ha vinto la macchina con il numero '+ machineNumber + ' e tu hai perso con il numero ' + playerNumber;
 }else{
-    alert('Ha vinto la macchina!')
+    alert('Hai vinto tu!')
+    confronto = 'Hai vinto tu con il numero '+ playerNumber  + ' e la macchina ha perso con il numero ' + machineNumber;
 }
+
+document.getElementById('risultato').innerHTML = confronto;
